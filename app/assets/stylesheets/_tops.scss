@@ -1,3 +1,16 @@
+// カラー
+$header-color: #a1d8e2;
+$main-color: #f7f6fb;
+$footer-color: #f19ca7;
+$font-color: #0f2350;
+$logo: #fffff9;
+
 * {
   box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+  color: $font-color;
 }

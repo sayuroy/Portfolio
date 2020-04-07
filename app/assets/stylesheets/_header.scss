@@ -1,0 +1,27 @@
+.header {
+  height: 80px;
+  width: 100%;
+  background: linear-gradient(to right, $header-color 60%, #8da0b6);
+  display: flex;
+  justify-content: space-between;
+  &__logo{
+    width: 450px;
+    font-family:  'arial black',serif;
+    color: $logo;
+    font-size: 40px;
+    line-height: 80px;
+    padding-left: 20px;
+  }
+  &__contents{
+    width: calc(100% - 50%);
+    padding-right: 10px;
+    ul{
+      display: flex;
+      justify-content: space-around;
+      line-height: 91px;
+      font-size: 25px;
+      color: $logo;
+    }
+
+  }
+}

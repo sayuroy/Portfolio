@@ -1,0 +1,12 @@
+.main {
+  height: calc(100vh - 130px);
+  width: 100%;
+  background-color: $main-color;
+  h3{
+    text-align: center;
+    line-height: 70px;
+  }
+  &__contents{
+    
+  }
+}
