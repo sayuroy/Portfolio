@@ -7,6 +7,19 @@
     line-height: 70px;
   }
   &__contents{
+    display: flex;
+    img{
+      height: 100%;
+      width: 80%;
+      background-size: cover;
+      border-radius: 10%;
+      opacity: 50%;
+      p{
+        font-size: 50px;
+        color: $font-color;
+      }
+    }
     
   }
 }
+
