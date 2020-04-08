@@ -8,18 +8,48 @@
   }
   &__contents{
     display: flex;
-    img{
-      height: 100%;
-      width: 80%;
-      background-size: cover;
-      border-radius: 10%;
-      opacity: 50%;
-      p{
-        font-size: 50px;
-        color: $font-color;
-      }
+    justify-content: space-around;
+    &_aboutme{
+      background-image: url('ノートパソコン.jpg');
+      height: 300px;
+      width: 300px;
+      background-size: 120%, cover;
+      background-position: unset;
+      border-radius: 50%;
+      opacity: 0.5;
     }
-    
+    &_vision{
+      background-image: url('光２.jpg');
+      height: 300px;
+      width: 300px;
+      background-size: 120%, cover;
+      background-position: center;
+      border-radius: 50%;
+      opacity: 0.5;
+    }
+    &_products{
+      background-image: url('ノート.jpg');
+      height: 300px;
+      width: 300px;
+      background-size: 150%, cover;
+      background-position: center;
+      border-radius: 50%;
+      opacity: 0.5;
+    }
+    &_contact{
+      background-image: url('白い花.jpg');
+      height: 300px;
+      width: 300px;
+      background-size: 150%, cover;
+      background-position: unset;
+      border-radius: 50%;
+      opacity: 0.4;
+    }
+    p{
+      font-size: 50px;
+      text-align: center;
+      line-height: 300px;
+    }
   }
 }
 
