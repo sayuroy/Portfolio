@@ -4,19 +4,18 @@
   background-color: $main-color;
   h3{
     text-align: center;
-    line-height: 70px;
+    line-height: 100px;
   }
   &__contents{
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     &_aboutme{
       background-image: url('ノートパソコン.jpg');
       height: 300px;
       width: 300px;
       background-size: 120%, cover;
       background-position: unset;
-      border-radius: 50%;
-      opacity: 0.5;
+      opacity: 0.8;
     }
     &_vision{
       background-image: url('光２.jpg');
@@ -24,8 +23,7 @@
       width: 300px;
       background-size: 120%, cover;
       background-position: center;
-      border-radius: 50%;
-      opacity: 0.5;
+      opacity: 0.8;
     }
     &_products{
       background-image: url('ノート.jpg');
@@ -33,8 +31,7 @@
       width: 300px;
       background-size: 150%, cover;
       background-position: center;
-      border-radius: 50%;
-      opacity: 0.5;
+      opacity: 0.8;
     }
     &_contact{
       background-image: url('白い花.jpg');
@@ -42,8 +39,7 @@
       width: 300px;
       background-size: 150%, cover;
       background-position: unset;
-      border-radius: 50%;
-      opacity: 0.4;
+      opacity: 0.8;
     }
     p{
       font-size: 50px;
@@ -52,4 +48,5 @@
     }
   }
 }
+
 
