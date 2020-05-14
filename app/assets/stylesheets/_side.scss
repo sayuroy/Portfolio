@@ -1,0 +1,23 @@
+.side {
+  height: 100vh;
+  width: 400px;
+  background: linear-gradient(to bottom, $header-color 60%, #8da0b6);
+  &__logo{
+    height: 200px;
+    width: 400px;
+    font-family:  'arial black',serif;
+    color: $logo;
+    font-size: 40px;
+    line-height: 80px;
+    padding: 50px 30px;
+  }
+  &__contents{
+    height: calc(100% - 200px);
+    padding: 100px 50px;
+    ul{
+      line-height: 91px;
+      font-size: 30px;
+      color: $logo;
+    }
+  }
+}

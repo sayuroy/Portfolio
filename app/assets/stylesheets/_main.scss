@@ -1,52 +1,45 @@
-.main {
-  height: calc(100vh - 130px);
-  width: 100%;
+.contents{
+  height: 100vh;
+  width: calc(100% - 400px);
   background-color: $main-color;
-  h3{
-    text-align: center;
-    line-height: 100px;
-  }
-  &__contents{
-    display: flex;
-    justify-content: center;
-    &_aboutme{
-      background-image: url('ノートパソコン.jpg');
-      height: 300px;
-      width: 300px;
-      background-size: 120%, cover;
-      background-position: unset;
-      opacity: 0.8;
-    }
-    &_vision{
-      background-image: url('光２.jpg');
-      height: 300px;
-      width: 300px;
-      background-size: 120%, cover;
-      background-position: center;
-      opacity: 0.8;
-    }
-    &_products{
-      background-image: url('ノート.jpg');
-      height: 300px;
-      width: 300px;
-      background-size: 150%, cover;
-      background-position: center;
-      opacity: 0.8;
-    }
-    &_contact{
-      background-image: url('白い花.jpg');
-      height: 300px;
-      width: 300px;
-      background-size: 150%, cover;
-      background-position: unset;
-      opacity: 0.8;
-    }
-    p{
-      font-size: 50px;
+  .main {
+    h3{
       text-align: center;
-      line-height: 300px;
+      line-height: 100px;
+    }
+    &__contents{
+      height: 50%;
+      width: 65%;
+      padding-top: 100px;
+      margin: 0 auto;
+      &_title{
+        font-size: 25px;
+        padding-bottom: 30px;
+      }
+      &_box{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        &_image{
+          padding-right: 30px;
+          img{
+            height: 150px;
+            border: 1px solid $font-color;
+          }
+        }
+        &_message{
+          font-size: 18px;
+          &_list{
+            font-size: 16px;
+            padding-top: 20px;
+          }
+        }
+      }
+      
     }
   }
+  
 }
+
 
 

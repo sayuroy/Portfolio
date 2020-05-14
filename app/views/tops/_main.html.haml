@@ -1,13 +1,16 @@
 .main
   %h3 ご覧頂きありがとうございます
   .main__contents
-    .main__contents_aboutme
-      %p ABOUT ME
-    .main__contents_vision
-      %p VISION
-    .main__contents_products
-      %p PRODUCTS
-    .main__contents_contact
-      %p CONTACT
-    .main__contents_left
-    .main__contents_right
+    .main__contents_title
+      %h4 自己紹介
+    .main__contents_box
+      .main__contents_box_image
+        = image_tag 'nameicon'
+      .main__contents_box_message
+        仕事を辞めてエンジニアになる為に猛勉強中です。好きな言葉はトライアンドエラーです！
+        %ul.main__contents_box_message_list
+          %li 名前： sayuroy
+          %li 趣味： 読書、プログラミング
+          %li プログラミング歷： 2020年3月から
+          %li 特技： Ruby on Rails, HTML, CSS, Javascript, jQuery, Swift, SQL
+          %li 開発環境：Mac, VScode, Xcode, GitHub
