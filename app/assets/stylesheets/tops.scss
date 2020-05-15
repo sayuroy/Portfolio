@@ -9,11 +9,9 @@ $logo: #fffff9;
   box-sizing: border-box;
 }
 
-body {
-  height: 100vh;
-  width: 100%;
-  color: $font-color;
-}
 .wrapper{
+  height: 100%;
+  width: 100vw;
+  color: $font-color;
   display: flex;
 }

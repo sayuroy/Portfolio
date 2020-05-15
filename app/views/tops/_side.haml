@@ -1,9 +1,16 @@
-.side
-  .side__logo
-    %h1 H.Sayuri's Portfolio
-  .side__contents
-    %ul
-      %li about me
-      %li products
-      %li blog
-      %li contact
+.side__logo
+  %h1 H.Sayuri's Portfolio
+.side__contents
+  %ul
+    %li
+      = link_to root_path, class: "side__contents_aboutme" do
+        About me
+    %li
+      = link_to root_path, {controller: 'tops', action: 'index', name: 'product'}, class: "side__contents_products" do
+        Products
+    %li
+      = link_to root_path, {controller: 'tops', action: 'index', name: 'blog'}, class: "side__contents_blog" do
+        Blog
+    %li
+      = link_to root_path, {controller: 'tops', action: 'index', name: 'contact'}, class: "side__contents_contact" do
+        Contact

@@ -2,6 +2,7 @@
   height: 100vh;
   width: 400px;
   background: linear-gradient(to bottom, $header-color 60%, #8da0b6);
+  position: fixed;
   &__logo{
     height: 200px;
     width: 400px;
@@ -17,7 +18,10 @@
     ul{
       line-height: 91px;
       font-size: 30px;
-      color: $logo;
+      a{
+        color: $logo;
+        text-decoration: none;
+      }
     }
   }
 }

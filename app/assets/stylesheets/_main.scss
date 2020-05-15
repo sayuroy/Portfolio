@@ -1,8 +1,10 @@
 .contents{
-  height: 100vh;
   width: calc(100% - 400px);
-  background-color: $main-color;
+  position: absolute;
+  right: 0;
   .main {
+    height: 100vh;
+    background-color: $main-color;
     h3{
       text-align: center;
       line-height: 100px;
@@ -15,8 +17,10 @@
       &_title{
         font-size: 25px;
         padding-bottom: 30px;
+        border-bottom: 1px solid $font_color;
       }
       &_box{
+        padding-top: 40px;
         display: flex;
         justify-content: space-around;
         align-items: center;
