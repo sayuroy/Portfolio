@@ -4,6 +4,7 @@ $main-color: #f7f6fb;
 $footer-color: #f19ca7;
 $font-color: #0f2350;
 $logo: #fffff9;
+$accent-color: #63f7d7;
 
 * {
   box-sizing: border-box;
@@ -14,4 +15,7 @@ $logo: #fffff9;
   width: 100vw;
   color: $font-color;
   display: flex;
+  p{
+    overflow: hidden;
+  }
 }

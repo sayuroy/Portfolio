@@ -2,13 +2,13 @@
   height: 100vh;
   background-color: $main-color;
   &__box{
-    width: 65%;
+    width: 70%;
     padding: 100px 0;
     margin: 0 auto;
     .contact__title{
       font-size: 25px;
       padding-bottom: 20px;
-      border-bottom: 1px solid $font_color;
+      border-bottom: 1px solid $font-color;
     }
     .contact__message{
       font-size: 18px;
@@ -19,16 +19,46 @@
       padding: 40px;
       &_title{
         font-size: 18px;
+        font-weight: bold;
+        padding-bottom: 10px;
       }
       &_form{
+        width: 100%;
         &_name{
-
+          padding-bottom: 10px;
+          .form_name{
+            width: 50%;
+            padding-left: 10px;
+          }
         }
         &_title{
-
+          padding-bottom: 10px;
+          .form_title{
+            width: 50%;
+            padding-left: 10px;
+          }
         }
         &_message{
-
+          padding-bottom: 10px;
+          .form_message{
+            padding-left: 10px;
+            border: 1px solid lightgray;
+          }
+        }
+        &_submit{
+          text-align: center;
+          .submit-btn{
+            font-size: 20px;
+            color: $font-color;
+            background-color: $accent-color;
+            padding: 10px 20px;
+            border: 1px solid lightgray;
+            border-radius: 10px;
+          }
+          .submit-btn:hover{
+            cursor: pointer;
+            opacity: 0.6;
+          }
         }
       }
     }

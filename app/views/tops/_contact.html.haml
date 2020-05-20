@@ -1,4 +1,4 @@
-.contact
+.contact{ id: "contacttop" }
   .contact__box
     .contact__title
       %p Contact
@@ -8,9 +8,17 @@
       .contact__contents_title
         %p お問い合わせフォーム
       .contact__contents_form
-        .contact__contents_form_name
-          %p name
-        .contact__contents_form_title
-          %p title
-        .contact__contents_form_message
-          %p message
+        = form_with url: tops_path, local: true do |f|
+          .contact__contents_form_name
+            お名前：
+            = f.text_field :name, class: "form_name", placeholder: "入力して下さい"
+          .contact__contents_form_title
+            ご用件：
+            = f.text_field :title, class: "form_title", placeholder: "入力して下さい"
+          .contact__contents_form_message
+            お問い合わせ内容の詳細：
+            %br
+            = f.text_area :message, size: "43x4", class: "form_message", placeholder: "入力して下さい"
+            %p 返信の必要な方はメールアドレスの記載もお願い致します
+          .contact__contents_form_submit
+            = f.button '送信する',type: "button", onclick: "submit();", class: "submit-btn", data: { disable_with: '問い合わせ中...' }

@@ -1,4 +1,4 @@
-.blog
+.blog{ id: "blogtop" }
   .blog__box
     .blog__title
       %p Blog
@@ -9,6 +9,7 @@
         %p エンジニア日記
       .blog__contents_box
         .blog__contents_box_image
-          %p image
+          = image_tag 'cake.jpg'
         .blog__contents_box_discription
-          %p URL
+          = icon("fas", "chevron-right", class: 'icon')
+          = link_to "ブログを見る", "#"
