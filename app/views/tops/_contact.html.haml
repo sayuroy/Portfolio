@@ -8,7 +8,7 @@
       .contact__contents_title
         %p お問い合わせフォーム
       .contact__contents_form
-        = form_with url: tops_path, local: true do |f|
+        = form_with url: tops_path, local: true, class: "message-form" do |f|
           .contact__contents_form_name
             お名前：
             = f.text_field :name, class: "form_name", placeholder: "入力して下さい"
@@ -21,4 +21,4 @@
             = f.text_area :message, size: "43x4", class: "form_message", placeholder: "入力して下さい"
             %p 返信の必要な方はメールアドレスの記載もお願い致します
           .contact__contents_form_submit
-            = f.button '送信する',type: "button", onclick: "submit();", class: "submit-btn", data: { disable_with: '問い合わせ中...' }
+            = f.submit '送信する', class: "submit-btn"
