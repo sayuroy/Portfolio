@@ -3,14 +3,14 @@
 .side__contents
   %ul
     %li
-      = link_to root_path, class: "side__contents_aboutme" do
+      = link_to root_path, class: "side__contents_aboutme", id: "side_aboutme" do
         About me
     %li
-      = link_to root_path, {controller: 'tops', action: 'index', name: 'product'}, class: "side__contents_products" do
+      = link_to root_path, {controller: 'tops', action: 'index', name: 'products'}, class: "side__contents_products", id: "side_products" do
         Products
     %li
-      = link_to root_path, {controller: 'tops', action: 'index', name: 'blog'}, class: "side__contents_blog" do
+      = link_to root_path, {controller: 'tops', action: 'index', name: 'blog'}, class: "side__contents_blog", id: "side_blog" do
         Blog
     %li
-      = link_to root_path, {controller: 'tops', action: 'index', name: 'contact'}, class: "side__contents_contact" do
+      = link_to root_path, {controller: 'tops', action: 'index', name: 'contact'}, class: "side__contents_contact", id: "side_contact" do
         Contact
