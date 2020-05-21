@@ -1,0 +1,9 @@
+.wrapper
+  .check
+    = link_to root_path do
+      %p 戻る
+    .check__title
+      %p メッセージリスト
+    .check__contents
+      - @message.each do |message|
+        = render partial: 'message', locals: { message: message }

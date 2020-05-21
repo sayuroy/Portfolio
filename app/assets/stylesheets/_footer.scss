@@ -3,9 +3,11 @@
   width: 100%;
   background-color: $footer-color;
   &__contents{
-    p{
-      text-align: center;
+    text-align: center;
+    &_link{
+      color: $font-color;
       line-height: 50px;
+      text-decoration: none;
     }
   }
 }

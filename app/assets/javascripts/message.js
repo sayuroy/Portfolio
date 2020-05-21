@@ -16,7 +16,7 @@ $(function() {
       var position = rect.top + window.pageYOffset;
       $('form')[0].reset();
       scrollTo(0, position);
-      alert("送信しました")
+      alert("送信しました。ありがとうございます。")
       $('.submit-btn').prop("disabled", false);
     }).fail(function(){
       var element = document.getElementById("contacttop");
