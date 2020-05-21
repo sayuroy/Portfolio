@@ -1,5 +1,4 @@
 class TopsController < ApplicationController
-  before_action :user_check, only: :check
 
   def index
     @message = Model.new
@@ -32,10 +31,4 @@ class TopsController < ApplicationController
     params.permit(:name, :title, :message)
   end
 
-  def user_check
-    authenticate_or_request_with_http_basic do |username, password|
-      username == Rails.application.credentials[:admin_check][:user] &&
-      password == Rails.application.credentials[:admin_check][:pass]
-    end
-  end
 end
