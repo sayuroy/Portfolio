@@ -4,10 +4,7 @@
   background-color: $footer-color;
   &__contents{
     text-align: center;
-    &_link{
-      color: $font-color;
-      line-height: 50px;
-      text-decoration: none;
-    }
+    line-height: 50px;
+    color: $font-color;
   }
 }
