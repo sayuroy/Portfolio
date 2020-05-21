@@ -16,6 +16,10 @@ class TopsController < ApplicationController
     end
   end
 
+  def show
+    render "tops/#{params[:name]}"
+  end
+
   def check
     @message = Model.all
   end

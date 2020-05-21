@@ -1,0 +1,68 @@
+.showcontent
+  .header
+    .header__title
+      %p WHIM ARROW!
+    .header__backbtn
+      = link_to "戻る", root_path
+  .content
+    .product
+      .product__title
+        .product__title_head
+          %p WHIM-ARROW!
+        .products__title_memo
+          %p ゼロからSwiftを学習し2週間で作りました！
+          %p アプリ名は”WHIM ARROW”気まぐれな矢印です。
+      .product__contents
+        .product__contents_overview
+          .product__contents_overview_head
+            %p 概要
+          .product__contents_overview_memo
+            %p 簡単なゲームアプリです。ユーザーは気まぐれな矢印が次に向く方向を３つの選択肢から選びます。５回勝負で、３回以上当てられたらユーザーの勝ちとなります。
+            %p 挑戦回数データはデバイスに保存され、勝率も確認できます。データの削除も行えます。
+        .product__contents_test
+          .product__contents_test_head
+            %p 本番環境
+          .product__contents_test_memo
+            %p Apple Store Connectにアプリをアップロードし、TestFlightを利用したテストユーザーのみに公開しています。
+        .product__contents_play
+          .product__contents_play_head
+            %p 遊び方
+          .product__contents_play_memo
+            %p playボタンを押すと始まります。３つの緑色の矢印の内、１つを選択して下さい。５回繰り返すと結果画面に遷移します。結果画面では挑戦回数や勝率の確認、データの削除が行えます。結果画面から戻るには、画面上部に指を置いて、下へスライドして下さい。
+            %p 矢印は時々気まぐれに動きます。まるで性格が宿っているかの様な動きをお楽しみ下さい。
+        .product__contents_gif
+          .product__contents_gif_head
+            %p Gif画像
+          .product__contents_gif_img
+            = image_tag 'arrow1.gif'
+            = image_tag 'arrow2.gif'
+        .product__contents_background
+          .product__contents_background_head
+            %p 制作背景
+          .product__contents_background_memo
+            %p 子供の頃から自分でゲームを作ってみたいという夢があり、プログラミングスクールでプログラミング学習を始めた事をきっかけに、自分でゼロからゲームアプリ制作に挑戦する事にしました。
+            %p 簡単だけれど何度もやってみたくなる、そんなゲームを目指しました。
+        .product__contents_devise
+          .product__contents_devise_head
+            %p 工夫した点
+          .product__contents_devise_memo
+            %p 指で操作できる手軽さとテンポの良さ、見た目も賑やかになる様に工夫しました。具体的には以下の３つです。
+            %p １．気まぐれ値を乱数で発生させて、矢印を３D回転させる事で、「気まぐれに動く性格のある矢印」を演出しました。
+            %p ２．結果画面はハーフモーダルビューを採用して、指で簡単に前の画面に戻れる様にしました。
+            %p ３．ライブラリLottieを使用し、賑やかなアニメーション表示をさせています。
+        .product__contents_develop
+          .product__contents_develop_head
+            %p 使用技術（開発環境）
+          .product__contents_develop_memo
+            %p アプリ言語： Swift
+            %p ツール： Xcode
+            %p ライブラリ： Lottie
+            %p プロジェクト管理： GitHub
+            %p タスク管理： Trello
+        .product__contents_future
+          .product__contents_future_head
+            %p 今後実装したい機能
+          .product__contents_future_memo
+            %p 制限時間の設定やBGMをつけて、よりテンポ良く遊べる様にしたいです。
+    .backbtn
+      = link_to "戻る", root_path

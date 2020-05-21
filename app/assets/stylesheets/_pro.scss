@@ -1,0 +1,145 @@
+.showcontent {
+  .header {
+    height: 100px;
+    width: 100%;
+    background-color: $header-color;
+    display: flex;
+    justify-content: space-around;
+    position: fixed;
+    z-index: 20;
+    &__title{
+      color: $logo;
+      font-family:  'arial black',serif;
+      font-size: 40px;
+      line-height: 100px;
+    }
+    &__backbtn{
+      a{
+        color: $logo;
+        font-size: 20px;
+        font-weight: bold;
+        line-height: 100px;
+        text-decoration: none;
+      }
+    }
+  }
+  .content {
+    width: 100%;
+    background-color: $main-color;
+    position: absolute;
+    top: 100px;
+    p{
+      color: $font-color;
+    }
+    .product{
+      width: 70%;
+      padding: 50px 0;
+      margin: 0 auto;
+      &__title{
+        &_head{
+          font-size: 30px;
+          font-weight: bold;
+          border-bottom: 1px solid $font-color;
+        }
+      }
+      &__contents{
+        &_overview{
+          padding: 30px 0;
+          &_head{
+            font-size: 25px;
+            font-weight: bold;
+            border-bottom: 1px solid $font-color;
+          }
+          &_memo{
+            padding-top: 20px;
+            img{
+              width: 100%;
+            }
+          }
+        }
+        &_test{
+          padding: 30px 0;
+          &_head{
+            font-size: 25px;
+            font-weight: bold;
+            border-bottom: 1px solid $font-color;
+          }
+        }
+        &_play{
+          padding: 30px 0;
+          &_head{
+            font-size: 25px;
+            font-weight: bold;
+            border-bottom: 1px solid $font-color;
+          }
+        }
+        &_gif{
+          padding: 30px 0;
+          &_head{
+            font-size: 25px;
+            font-weight: bold;
+            border-bottom: 1px solid $font-color;
+          }
+          img{
+            height: 500px;
+            max-width: 100%;
+            margin: 30px;
+          }
+          p{
+            padding-left: 30px;
+          }
+        }
+        &_background{
+          padding: 30px 0;
+          &_head{
+            font-size: 25px;
+            font-weight: bold;
+            border-bottom: 1px solid $font-color;
+          }
+        }
+        &_devise{
+          padding: 30px 0;
+          &_head{
+            font-size: 25px;
+            font-weight: bold;
+            border-bottom: 1px solid $font-color;
+          }
+        }
+        &_develop{
+          padding: 30px 0;
+          &_head{
+            font-size: 25px;
+            font-weight: bold;
+            border-bottom: 1px solid $font-color;
+          }
+        }
+        &_future{
+          padding: 30px 0;
+          &_head{
+            font-size: 25px;
+            font-weight: bold;
+            border-bottom: 1px solid $font-color;
+          }
+        }
+      }
+    }
+    .backbtn{
+      text-align: center;
+      a{
+        color: $font-color;
+        font-size: 20px;
+        font-weight: bold;
+        line-height: 100px;
+        text-decoration: none;
+        padding: 10px 20px;
+        background-color: $accent-color;
+        border: 1px solid lightgray;
+        border-radius: 10px;
+      }
+      a:hover{
+        cursor: pointer;
+        opacity: 0.6;
+      }
+    }
+  }
+}

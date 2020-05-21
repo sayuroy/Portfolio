@@ -1,0 +1,84 @@
+.showcontent
+  .header
+    .header__title
+      %p FURIMA
+    .header__backbtn
+      = link_to "戻る", root_path
+  .content
+    .product
+      .product__title
+        .product__title_head
+          %p FURIMA（チーム制作）
+        .products__title_memo
+          %p TECH CAMP 73期短期メンバー５名で、スクラムによるアジャイル開発により作成しました。
+          %p 制作期間：2020年4月21日〜5月13日
+      .product__contents
+        .product__contents_overview
+          .product__contents_overview_head
+            %p 概要
+          .product__contents_overview_memo
+            %p メルカリクローンのフリーマーケットアプリです。会員登録をすると商品の出品や購入ができます。
+            = image_tag 'furimatop.jpg'
+        .product__contents_test
+          .product__contents_test_head
+            %p 本番環境
+          .product__contents_test_memo
+            %p サイトにアクセスするにはBasic認証が必要です。
+            URL：
+            = link_to "http://18.180.239.6/", "http://18.180.239.6/"
+        .product__contents_play
+          .product__contents_play_head
+            %p 私の分担箇所
+          .product__contents_play_memo
+            %p スクラムマスター
+            %p 商品購入ページ（マークアップ）
+            %p 商品出品機能（サーバーサイド＆単体テスト）
+            %p クレジットカードによる商品購入機能（サーバーサイド）
+            %p クレジットカード登録削除機能（Pay.jpのAPIを利用）
+        .product__contents_gif
+          .product__contents_gif_head
+            %p 参考画像
+          .product__contents_gif_img
+            %p 商品出品
+            = image_tag 'sellitem.png'
+            %p ユーザーマイページ
+            = image_tag 'mypage.png'
+            %p クレジットカード管理（テスト用のカードです）
+            = image_tag 'card.png'
+        .product__contents_background
+          .product__contents_background_head
+            %p 工夫した点
+          .product__contents_background_memo
+            %p チームとして工夫を行った点は以下の通りです。
+            %p １．開発当初に、コンフリクトの解消方法やgithubのコミットの仕方についてチームで一度認識を合わせた事
+            %p ２．チーム内でコアタイムを設定した事
+            %br
+            %p 個人として工夫を行った点は以下の通りです。
+            %p １．スクラムマスターとして、チームMTGで全員が一度は発言をする様にし、進捗の共有を確実にする様に留意した点
+            %p ２．スクラムマスターとして、開発の優先順位についての全員の認識を合わせる様にした点
+            %p ３．利用者が使い易いアプリにするために、小さな事でもこだわって開発をした点
+        .product__contents_devise
+          .product__contents_devise_head
+            %p 苦労した点
+          .product__contents_devise_memo
+            %p １．クレジットカード機能
+            %p ２．エラーハンドリング
+            %p ３．チーム開発の優先順位の決定
+        .product__contents_develop
+          .product__contents_develop_head
+            %p 使用技術（開発環境）
+          .product__contents_develop_memo
+            %p アプリ言語： Ruby, haml, scss, javascript
+            %p ツール： VScode
+            %p フレームワーク： Ruby on rails
+            %p 主なライブラリ： Devise, Jquery, active_hash
+            %p API： Pay.jp
+            %p プロジェクト管理： GitHub
+            %p タスク管理： Trello
+        .product__contents_future
+          .product__contents_future_head
+            %p 今後実装したい機能
+          .product__contents_future_memo
+            %p ネットオークションの様な時間制限や値段交渉ができたら面白いのかなと思います。
+    .backbtn
+      = link_to "戻る", root_path

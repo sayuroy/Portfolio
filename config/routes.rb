@@ -3,6 +3,7 @@ Rails.application.routes.draw do
   root "tops#index"
   resources :tops, only: [:index, :create]
   get 'check', controller: 'tops', action: 'check'
+  get 'tops/:name', controller: 'tops', action: 'show'
   namespace :api do  
     resources :tops, only: :index, defaults: { format: 'json' }
   end
