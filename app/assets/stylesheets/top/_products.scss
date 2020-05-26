@@ -68,6 +68,29 @@
           }
         }
       }
+      &3{
+        padding-top: 40px;
+        &_title{
+          font-size: 18px;
+          font-weight: bold;
+          padding-bottom: 10px;
+        }
+        &_box{
+          display: flex;
+          &_image{
+            height: 200px;
+            width: 200px;
+            img{
+              height: 200px;
+              width: 200px;
+            }
+          }
+          &_discription{
+            width: calc(100% - 200px);
+            padding-left: 20px;
+          }
+        }
+      }
     }
   }
 }
