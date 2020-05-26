@@ -1,0 +1,2 @@
+class Buymemo < ApplicationRecord
+end

@@ -80,6 +80,11 @@
           &_image{
             height: 200px;
             width: 200px;
+            background-color: white;
+            p{
+              text-align: center;
+              line-height: 200px;
+            }
             img{
               height: 200px;
               width: 200px;
@@ -88,6 +93,9 @@
           &_discription{
             width: calc(100% - 200px);
             padding-left: 20px;
+            i{
+              font-size: 25px;
+            }
           }
         }
       }

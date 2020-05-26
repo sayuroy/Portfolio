@@ -1,0 +1,2 @@
+class MemoLabel < ApplicationRecord
+end
