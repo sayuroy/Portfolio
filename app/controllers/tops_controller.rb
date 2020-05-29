@@ -1,4 +1,5 @@
 class TopsController < ApplicationController
+  before_action :memo_user_check
 
   def index
     @message = Model.new
@@ -31,4 +32,7 @@ class TopsController < ApplicationController
     params.permit(:name, :title, :message)
   end
 
+  def memo_user_check
+    redirect_to memos_path if user_signed_in?
+  end
 end

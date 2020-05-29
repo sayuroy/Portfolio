@@ -4,7 +4,7 @@ class DeviseCreateUsers < ActiveRecord::Migration[5.2]
   def change
     create_table :users do |t|
       # 追加
-      t.string   :name,             null: false
+      t.string  :name,             null: false
       t.integer :memostock
 
       ## Database authenticatable
