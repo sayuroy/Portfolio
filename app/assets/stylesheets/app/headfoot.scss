@@ -1,0 +1,70 @@
+.app {
+  height: 100%;
+  width:100%;
+  background-color: $app-main;
+  &-header {
+    height: 150px;
+    width: 100%;
+    color: $app-font;
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 2px dashed $app-font;
+    position: fixed;
+    z-index: 200;
+    .header__logo{
+      width: 300px;
+      font-size: 30px;
+      padding: 20px;
+      .icon{
+        font-size: 80px;
+      }
+    }
+    .header__contents{
+      width: 250px;
+      font-size: 25px;
+      &_upper{
+        padding: 20px;
+      }
+      &_box{
+        font-size: 40px;
+        display: flex;
+        justify-content: right;
+        align-items: flex-end;
+        &_left{
+          padding: 0 20px;
+        }
+        &_center{
+          padding: 0 20px;
+        }
+        &_right{
+          padding: 0 10px;
+          a{
+            color: $app-font;
+            text-decoration: none;
+          }
+        }
+      }
+    }
+  }
+  .app-header_hidden{
+    height: 150px;
+    width: 100%;
+    background-color: $app-main;
+    opacity: 0.6;
+    position: fixed;
+    z-index: 198;
+  }
+}
+.app-footer {
+  background-color: $app-font;
+  text-align: center;
+  padding: 50px 0 50px 300px;
+  &_title{
+    color: $app-back;
+    font-size: 30px;
+    padding-bottom:30px;
+  }
+  &_message{
+    color: $app-back;
+  }
+}

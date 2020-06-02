@@ -1,12 +1,106 @@
 .app
-  .header
+  .app-header
     = render 'header'
-  .contents
-    .contents__box
-      .contents__box_title
-      .contents__box_img
-      .contents__box_main
-        .mainbox
-          .mainbox__list
-  .app-footer
-    = render 'footer'
+  .app-header_hidden
+  .app-contents
+    .app-contents_sidearea
+      .contents__side
+        .contents__side1_title
+          %p 最近の投稿
+        %ul.contents__side1_list
+          %li その１
+          %li その２
+        .contents__side2_title
+          %p お気に入り
+        %ul.contents__side2_list
+          %li その１
+          %li その２
+        .contents__side3_title
+          %p データ
+        %ul.contents__side3_list
+          %li 投稿した数
+          %li 売れた数
+          %li お気に入りした数
+    .contents__area
+      .contents__area_box1
+        .contents__area_box1_title
+          %p 注目ラベル
+        .contents__area_box1_list
+          .contents__area_box1_list1
+            Mac
+          .contents__area_box1_list2
+            Ruby
+          .contents__area_box1_list3
+            js
+          .contents__area_box1_list4
+            Ruby on rails
+          .contents__area_box1_list5
+            GitHub
+      .contents__area_box2
+        .contents__area_box2_title
+          %p 最新の公開投稿
+        .contents__area_box2_list
+          .contents__area_box2_list1
+            .contents__area_box2_list1_title
+              %p 初めてのデプロイ
+            .contents__area_box2_list1_label
+              Mac, Ruby, AWS
+          .contents__area_box2_list2
+            .contents__area_box2_list2_title
+              %p お腹が空いた時の対処法
+            .contents__area_box2_list2_label
+              空腹時, 悩み, 精神
+          .contents__area_box2_list3
+            .contents__area_box2_list3_title
+              %p 眠くなった時の心構え
+            .contents__area_box2_list3_label
+              寝不足, 悩み, 精神
+        .contents__area_box2_listsecond
+          .contents__area_box2_list1
+            .contents__area_box2_list1_title
+              %p 初めてのデプロイ
+            .contents__area_box2_list1_label
+              Mac, Ruby, AWS
+          .contents__area_box2_list2
+            .contents__area_box2_list2_title
+              %p お腹が空いた時の対処法
+            .contents__area_box2_list2_label
+              空腹時, 悩み, 精神
+          .contents__area_box2_list3
+            .contents__area_box2_list3_title
+              %p 眠くなった時の心構え
+            .contents__area_box2_list3_label
+              寝不足, 悩み, 精神
+      .contents__area_box3
+        .contents__area_box3_title
+          %p 人気ランキング
+        .contents__area_box3_list
+          .contents__area_box3_list_left
+            .ranklike_title
+              %p お気に入り
+            .ranklike_rank
+              %p 1. *****
+              %p 2. ******
+              %p 3. ******
+              %p 4. ******
+              %p 5. ******
+          .contents__area_box3_list_center
+            .rankbought_title
+              %p 売れ筋
+            .rankbought_rank
+              %p 1. *****
+              %p 2. ******
+              %p 3. ******
+              %p 4. ******
+              %p 5. ******
+          .contents__area_box3_list_right
+            .rankyouser_title
+              %p ユーザー
+            .rankyouser_rank
+              %p 1. *****
+              %p 2. ******
+              %p 3. ******
+              %p 4. ******
+              %p 5. ******
+    .app-footer
+      = render 'footer'

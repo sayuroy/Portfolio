@@ -1,25 +1,191 @@
-.app {
-  .header {
-
+.app-contents {
+  height: 100%;
+  width: 100%;
+  color: $app-font;
+  padding-top: 200px;
+  &_sidearea{
+    height: 100%;
+    width: 300px;
+    background-color: $app-main;
+    position: fixed;
+    z-index: 199;
+    .contents__side{
+      padding: 20px;
+      margin: 20px;
+      background-color: $app-back;
+      border-radius: 10px;
+      &1_title{
+        font-size: 20px;
+        border-bottom: 4px dashed $app-sub;
+      }
+      &1_list{
+        padding: 5px;
+      }
+      &2_title{
+        padding-top: 20px;
+        font-size: 20px;
+        border-bottom: 4px dashed $app-sub;
+      }
+      &2_list{
+        padding: 5px;
+      }
+      &3_title{
+        padding-top: 20px;
+        font-size: 20px;
+        border-bottom: 4px dashed $app-sub;
+      }
+      &3_list{
+        padding: 5px;
+      }
+    }
   }
-  .contents {
-    &__box{
+  .contents__area{
+    height: 100%;
+    width: calc(100% - 300px);
+    padding: 20px 30px 100px 30px;
+    margin-left: 300px;
+    &_box1{
+      padding: 20px;
+      margin-bottom: 30px;
+      background-color: $app-back;
+      border-radius: 10px;
       &_title{
-
+        font-size: 30px;
+        border-bottom: 4px dashed $app-sub;
       }
-      &_img{
-
+      &_list{
+        padding-top: 20px;
+        display: flex;
+        font-size: 20px;
+        &1{
+          padding: 0 10px;
+        }
+        &2{
+          padding: 0 10px;
+        }
+        &3{
+          padding: 0 10px;
+        }
+        &4{
+          padding: 0 10px;
+        }
+        &5{
+          padding: 0 10px;
+        }
       }
-      &_main{
-        .mainbox{
-          &__list{
-
+    }
+    &_box2{
+      padding: 20px;
+      margin-bottom: 30px;
+      background-color: $app-back;
+      border-radius: 10px;
+      &_title{
+        font-size: 30px;
+        border-bottom: 4px dashed $app-sub;
+      }
+      &_list{
+        padding-top: 20px;
+        display: flex;
+        justify-content: space-around;
+        &1{
+          height: 150px;
+          width: 30%;
+          text-align: center;
+          border: 2px solid $app-font;
+          overflow: hidden;
+          &_title{
+            height: 100px;
+            font-size: 20px;
+            font-weight: bold;
+            padding: 20px;
+          }
+          &_label{
+            font-size: 15px;
+          }
+        }
+        &2{
+          height: 150px;
+          width: 30%;
+          text-align: center;
+          border: 2px solid $app-font;
+          overflow: hidden;
+          &_title{
+            height: 100px;
+            font-size: 20px;
+            font-weight: bold;
+            padding: 20px;
+          }
+          &_label{
+            font-size: 15px;
+          }
+        }
+        &3{
+          height: 150px;
+          width: 30%;
+          text-align: center;
+          border: 2px solid $app-font;
+          overflow: hidden;
+          &_title{
+            height: 100px;
+            font-size: 20px;
+            font-weight: bold;
+            padding: 20px;
+          }
+          &_label{
+            font-size: 15px;
+          }
+        }
+      }
+      &_listsecond{
+        padding-top: 20px;
+        display: flex;
+        justify-content: space-around;
+      }
+    }
+    &_box3{
+      padding: 20px;
+      margin-bottom: 30px;
+      background-color: $app-back;
+      border-radius: 10px;
+      &_title{
+        font-size: 30px;
+        border-bottom: 4px dashed $app-sub;
+      }
+      &_list{
+        padding-top: 20px;
+        display: flex;
+        justify-content: space-around;
+        &_left{
+          .ranklike_title{
+            font-size: 25px;
+            font-weight: bold;
+          }
+          .ranklike_rank{
+            font-size: 20px;
+            padding: 10px;
+          }
+        }
+        &_center{
+          .rankbought_title{
+            font-size: 25px;
+            font-weight: bold;
+          }
+          .rankbought_rank{
+            font-size: 20px;
+            padding: 10px;
+          }
+        }
+        &_right{
+          .rankyouser_title{
+            font-size: 25px;
+            font-weight: bold;
+          }
+          .rankyouser_rank{
+            font-size: 20px;
+            padding: 10px;
           }
         }
       }
     }
-  }
-  .app-footer {
-
   }
 }

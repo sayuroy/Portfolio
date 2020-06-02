@@ -1,7 +1,15 @@
 .header__logo
-  %h2 ライフハック MEMO
+  = icon("far", "lemon", class: 'icon')
+  %h2 Life Hack MEMO
 .header__contents
-  .header__contents_left
+  .header__contents_upper
+    Hello,
     = current_user.name
-  .header__contents_right
-    = link_to "ログアウト", destroy_user_session_path, method: :delete, class: 'btn'
+  .header__contents_box
+    .header__contents_box_left
+      = icon("far", "address-book", class: 'icon')
+    .header__contents_box_center
+      = icon("fas", "edit", class: 'icon')
+    .header__contents_box_right
+      = link_to "", destroy_user_session_path, method: :delete, class: 'btn'
+      = icon("fas", "door-open", class: 'icon')
