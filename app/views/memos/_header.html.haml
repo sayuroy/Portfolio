@@ -1,0 +1,7 @@
+.header__logo
+  %h2 ライフハック MEMO
+.header__contents
+  .header__contents_left
+    = current_user.name
+  .header__contents_right
+    = link_to "ログアウト", destroy_user_session_path, method: :delete, class: 'btn'
