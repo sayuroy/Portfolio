@@ -12,5 +12,5 @@
       = link_to new_memo_path, class: "new-memo" do
         = icon("fas", "edit", class: 'icon')
     .header__contents_box_right
-      = link_to "", destroy_user_session_path, method: :delete, class: 'btn'
-      = icon("fas", "door-open", class: 'icon')
+      = link_to destroy_user_session_path, method: :delete, class: 'logout-memo' do
+        = icon("fas", "door-open", class: 'icon')

@@ -2,7 +2,9 @@
   .account-page__box
     .account-page__box_content
       .account-page__box_content_header
-        %h2 Please Log In!
+        .account-title
+          %h2 Please Log In!
+        %br
         %h5 登録アカウントでログイン
         = render "devise/shared/links"
       .account-page__box_content_user-form
