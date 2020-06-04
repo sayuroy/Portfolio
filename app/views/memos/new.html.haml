@@ -8,26 +8,38 @@
     .contents__area
       .contents__area_box1
         .contents__area_box1_title
-          %p nameさんのLife Hack
+          = icon("fas", "edit", class: 'icon')
+          nameさんのLife Hack
         .contents__area_box1_input
-          .input__title
-            %p タイトル（40文字以内）
-            %input
-            %p メモのタイトルです。これは全ての人に公開されます。
-          .input__text
-            %p 詳細
-            %textarea(name="texdt" cols="40" rows="3")
-            %p あなたのライフハックの詳細を教えて下さい
-          .input__public
-            %p 公開設定
-            %input
-            %p 公開にするとユーザー登録した全員が閲覧でき、購入もできます
-            %p 非公開にすると投稿した本人しか閲覧できません
-          .input__price
-            %p 値段
-            %input
-            %p 0〜100,000まで設定できます
-            %p ※1円以上は手数料として購入毎に300円頂きますのでご注意下さい
+          = form_with model: @memo, local: true, method: "POST" do |f|
+            .input__title
+              .input__title_head
+                %span{style: "color: #faee42;"} ●
+                %c タイトル（40文字以内）
+              %p メモのタイトルです。これは全ての人に公開されます。
+              = f.text_field :title, class: "input_memoTitle", placeholder: "40文字まで"
+            .input__text
+              .input__text_head
+                %span{style: "color: #faee42;"} ●
+                %c 詳細
+              %p あなたのライフハックの詳細を教えて下さい
+              = f.text_field :text, class: "input_memoText", placeholder: "10,000文字まで"
+            .input__public
+              .input__public_head
+                %span{style: "color: #faee42;"} ●
+                %c 公開設定
+              %p チェックを入れるとユーザー登録した全員が閲覧でき、購入もできます
+              %p チェックがない場合非公開となり投稿した本人しか閲覧できす、購入もできません
+              %br
+              = f.check_box :public, style: "transform:scale(2.0)"
+              = f.label :公開する
+            .input__price
+              .input__price_head
+                %span{style: "color: #faee42;"} ●
+                %c 値段
+              %input
+              %p 0〜100,000まで設定できます
+              %p ※1円以上は手数料として購入毎に300円頂きますのでご注意下さい
           .input__submit
             %input{type: "submit",class: "new_memo_submit", value: "投稿する"}
     .app-footer
