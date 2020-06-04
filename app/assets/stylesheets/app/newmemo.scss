@@ -1,0 +1,30 @@
+.contents__area_box1_input{
+  padding: 20px 0 20px 20%;
+  font-size: 20px;
+  input,textarea{
+    max-width: 80%; 
+    padding-left: 20px;
+  }
+  .input__title{
+    padding-top: 20px;
+  }
+  .input__text{
+    padding-top: 20px;
+  }
+  .input__public{
+    padding-top: 20px;
+  }
+  .input__price{
+    padding-top: 20px;
+  }
+  .input__submit{
+    padding-top: 20px;
+    .new_memo_submit{
+      color: $app-font;
+      padding: 10px 30px;
+      margin: 20px 0;
+      border-radius: 10px;
+      background-color: $app-accent;
+    }
+  }
+}

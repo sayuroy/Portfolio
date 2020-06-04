@@ -1,0 +1,34 @@
+.app
+  .app-header
+    = render 'header'
+  .app-header_hidden
+  .app-contents
+    .app-contents_sidearea
+      .contents__side
+    .contents__area
+      .contents__area_box1
+        .contents__area_box1_title
+          %p nameさんのLife Hack
+        .contents__area_box1_input
+          .input__title
+            %p タイトル（40文字以内）
+            %input
+            %p メモのタイトルです。これは全ての人に公開されます。
+          .input__text
+            %p 詳細
+            %textarea(name="texdt" cols="40" rows="3")
+            %p あなたのライフハックの詳細を教えて下さい
+          .input__public
+            %p 公開設定
+            %input
+            %p 公開にするとユーザー登録した全員が閲覧でき、購入もできます
+            %p 非公開にすると投稿した本人しか閲覧できません
+          .input__price
+            %p 値段
+            %input
+            %p 0〜100,000まで設定できます
+            %p ※1円以上は手数料として購入毎に300円頂きますのでご注意下さい
+          .input__submit
+            %input{type: "submit",class: "new_memo_submit", value: "投稿する"}
+    .app-footer
+      = render 'footer'

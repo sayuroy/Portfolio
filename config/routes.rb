@@ -9,5 +9,5 @@ Rails.application.routes.draw do
     resources :tops, only: :index, defaults: { format: 'json' }
   end
 
-  resources :memos, only: :index
+  resources :memos, only: [:index, :new]
 end

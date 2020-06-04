@@ -2,9 +2,10 @@ class MemosController < ApplicationController
   before_action :signin_check
 
   def index
-
   end
 
+  def new
+  end
 
 
   private

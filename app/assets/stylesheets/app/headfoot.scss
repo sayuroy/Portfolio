@@ -30,6 +30,9 @@
         display: flex;
         justify-content: right;
         align-items: flex-end;
+        a{
+          color: $app-font;
+        }
         &_left{
           padding: 0 20px;
         }
