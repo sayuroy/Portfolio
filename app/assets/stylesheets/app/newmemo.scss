@@ -27,7 +27,6 @@
     #memo_public{
       width: 20px;
       vertical-align: bottom;
-      vertical-align: -webkit-baseline-middle;
     }
     label{
       font-size: 20px;
@@ -41,7 +40,9 @@
   }
   .input__submit{
     padding-top: 20px;
+    text-align: left;
     .new_memo_submit{
+      width: 200px;
       color: $app-font;
       padding: 10px 30px;
       margin: 20px 0;
