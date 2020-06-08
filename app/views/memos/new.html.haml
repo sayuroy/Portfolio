@@ -37,7 +37,9 @@
               .input__price_head
                 %span{style: "color: #faee42;"} ●
                 %c 値段
-              = f.text_field :price, class: "input_memoPrice", placeholder: "0 ~ 100,000まで"
+              .input_price_mark
+                ¥
+                = f.text_field :price, class: "input_memoPrice", placeholder: "0 ~ 100,000まで"
               %p ※1円以上は手数料として購入毎に300円頂きますのでご注意下さい
           .input__submit
             %input{type: "submit",class: "new_memo_submit", value: "投稿する"}
