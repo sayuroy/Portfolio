@@ -31,14 +31,13 @@
               %p チェックを入れるとユーザー登録した全員が閲覧でき、購入もできます
               %p チェックがない場合非公開となり投稿した本人しか閲覧できす、購入もできません
               %br
-              = f.check_box :public, style: "transform:scale(2.0)"
+              = f.check_box :public, style: "transform:scale(2.0)", class: "input_memoPublic"
               = f.label :公開する
             .input__price
               .input__price_head
                 %span{style: "color: #faee42;"} ●
                 %c 値段
-              %input
-              %p 0〜100,000まで設定できます
+              = f.text_field :price, class: "input_memoPrice", placeholder: "0 ~ 100,000まで"
               %p ※1円以上は手数料として購入毎に300円頂きますのでご注意下さい
           .input__submit
             %input{type: "submit",class: "new_memo_submit", value: "投稿する"}
