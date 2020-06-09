@@ -49,5 +49,9 @@
       border-radius: 10px;
       background-color: $app-accent;
     }
+    .new_memo_submit:hover{
+      cursor: pointer;
+      opacity: 0.6;
+    }
   }
 }

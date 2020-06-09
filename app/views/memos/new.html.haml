@@ -41,7 +41,8 @@
                 ¥
                 = f.text_field :price, class: "input_memoPrice", placeholder: "0 ~ 100,000まで"
               %p ※1円以上は手数料として購入毎に300円頂きますのでご注意下さい
-          .input__submit
-            %input{type: "submit",class: "new_memo_submit", value: "投稿する"}
+            .input__submit
+              = f.submit '投稿する',  class: "new_memo_submit", data: { disable_with: '問い合わせ中...' }
+            // jsでEnterキー無効をいれる事！
     .app-footer
       = render 'footer'
