@@ -12,9 +12,13 @@
           %p 最近の投稿
         %ul.contents__side1_list
           %li 
-            = @my_recentrymemo.last[:title]
+            - if @my_recentrymemo.present?
+              = @my_recentrymemo.last[:title]
+            - else
+              まだ投稿がありません
           %li 
-            = @my_recentrymemo.first[:title]
+            - if @my_recentrymemo.present? && @my_recentrymemo.count > 1
+              = @my_recentrymemo.first[:title]
         .contents__side2_title
           %p 最近のコメント
         %ul.contents__side2_list
@@ -24,9 +28,14 @@
           %p データ
         %ul.contents__side3_list
           %li 
-            投稿した数
-          %li 売れた数
-          %li 購入した数
+            投稿した数...
+            = @mydata[:count]
+          %li
+            購入した数...
+            0
+          %li
+            売れた数.......
+            = @mydata[:solds]
     .contents__area
       .contents__area_box1
         .contents__area_box1_title

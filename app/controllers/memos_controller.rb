@@ -3,9 +3,9 @@ class MemosController < ApplicationController
 
   def index
     @memos = Memo.all
-    @mymemos = Memo.where(user_id: current_user.id)
-    @mydata = mydata_check(@mymemos)
-    @my_recentrymemo = @mymemos.last(2)
+    mymemos = Memo.where(user_id: current_user.id)
+    @mydata = mydata_check(mymemos)
+    @my_recentrymemo = mymemos.last(2) if mymemos.present?
   end
 
   def new
@@ -33,12 +33,14 @@ class MemosController < ApplicationController
   end
 
   def mydata_check(mydata)
+    data = {}
     solds = 0 if solds.blank?
     mydata.each do |d|
       solds += d.sellcount if d.sellcount.present?
     end
-    
-    return solds
+    data[:count] = mydata.count
+    data[:solds] = solds
 
+    return data
   end
 end
