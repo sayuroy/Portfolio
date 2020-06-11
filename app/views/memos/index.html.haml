@@ -5,6 +5,9 @@
   .app-contents
     .app-contents_sidearea
       .contents__side
+        .contents__side_title
+          %span{style: "color: #26ff92;"}●
+          = current_user.name + "さん"
         .contents__side1_title
           %p 最近の投稿
         %ul.contents__side1_list

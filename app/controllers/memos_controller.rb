@@ -2,6 +2,7 @@ class MemosController < ApplicationController
   before_action :signin_check
 
   def index
+    @memos = Memo.all
   end
 
   def new
