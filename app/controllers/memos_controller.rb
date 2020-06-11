@@ -3,6 +3,9 @@ class MemosController < ApplicationController
 
   def index
     @memos = Memo.all
+    @mymemos = Memo.where(user_id: current_user.id)
+    @mydata = mydata_check(@mymemos)
+    @my_recentrymemo = @mymemos.last(2)
   end
 
   def new
@@ -27,5 +30,15 @@ class MemosController < ApplicationController
 
   def memo_params
     params.require(:memo).permit(:title, :text, :public, :price).merge(user_id: current_user.id)
+  end
+
+  def mydata_check(mydata)
+    solds = 0 if solds.blank?
+    mydata.each do |d|
+      solds += d.sellcount if d.sellcount.present?
+    end
+    
+    return solds
+
   end
 end

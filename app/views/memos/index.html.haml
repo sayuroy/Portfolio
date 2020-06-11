@@ -11,19 +11,22 @@
         .contents__side1_title
           %p 最近の投稿
         %ul.contents__side1_list
-          %li その１
-          %li その２
+          %li 
+            = @my_recentrymemo.last[:title]
+          %li 
+            = @my_recentrymemo.first[:title]
         .contents__side2_title
-          %p お気に入り
+          %p 最近のコメント
         %ul.contents__side2_list
           %li その１
           %li その２
         .contents__side3_title
           %p データ
         %ul.contents__side3_list
-          %li 投稿した数
+          %li 
+            投稿した数
           %li 売れた数
-          %li お気に入りした数
+          %li 購入した数
     .contents__area
       .contents__area_box1
         .contents__area_box1_title
